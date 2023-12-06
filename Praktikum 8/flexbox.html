@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        nav {
+            position: fixed;
+            padding: 10px;
+            text-align: center;
+            left: 0px;
+            width: 250px;
+            height: 100%;
+            background: rgb(248, 147, 181);
+            transition: all 0.5s ease;
+        }
+
+        header {
+            background-color: rgb(217, 224, 92), 205;
+            height: 10%;
+            padding: 10px;
+            text-align: center;
+            order: 1;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            order: 1;
+        }
+
+        aside {
+            background-color: rgb(0, 200, 255);
+            padding: 10px;
+            text-align: center;
+            flex: 3;
+        }
+
+        article {
+            background-color: rgb(252, 250, 249);
+            padding: 10px;
+            text-align: center;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        footer {
+            background-color: rgb(230, 235, 135);
+            height: 10%;
+            padding: 10px;
+            text-align: center;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <nav>Nav</nav> 
+        </div>
+    </main>
+    <div class="container">
+        <header>Header</header>
+        <main>
+        <aside>Article</aside>
+        <article>Aside</article>
+        </main>
+        <footer>Footer</footer>
+    </div>
+    
+   
+</body>
+</html>
